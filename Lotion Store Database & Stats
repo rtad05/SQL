@@ -1,0 +1,22 @@
+--Create a store database
+CREATE TABLE lotions (id INTEGER PRIMARY KEY, scent TEXT, area TEXT, size TEXT, price INTEGER, rank INTEGER);
+
+INSERT INTO lotions VALUES (1,"jasmine","hands","small",10,1);
+INSERT INTO lotions VALUES (2,"cherry blossom","body","large",30,2);
+INSERT INTO lotions VALUES (3,"almond","body","large",30,3);
+INSERT INTO lotions VALUES (4,"cucumber","hands","small",10,4);
+INSERT INTO lotions VALUES (5,"lavendar","feet","medium",20,5);
+INSERT INTO lotions VALUES (6,"rose","hands","small",10,5);
+INSERT INTO lotions VALUES (7,"vanilla","body","large",30,7);
+INSERT INTO lotions VALUES (8,"coconut","body","large",30,8);
+INSERT INTO lotions VALUES (9,"mango","feet","medium",20,9);
+INSERT INTO lotions VALUES (10,"strawverry","hands","small",10,10);
+INSERT INTO lotions VALUES (11,"eucalyptus","feet","medium",20,11);
+INSERT INTO lotions VALUES (12,"lemongrass","body","large",30,12);
+INSERT INTO lotions VALUES (13,"peppermint", "feet", "medium",20,13);
+INSERT INTO lotions VALUES (14, "grapefruit","body","large",30,14);
+INSERT INTO lotions VALUES (15,"sandalwood","hands","small",10,15);
+--display the products by price
+SELECT * FROM lotions ORDER BY price;
+--what is the sum of the prices for all lotions
+SELECT SUM (price) FROM lotions
